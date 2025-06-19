@@ -1,0 +1,22 @@
+- id: 10
+  name: Clementina DuBuque
+  email: Rey.Padberg@karina.biz
+  address:
+    street: Kattie Turnpike
+    suite: Suite 198
+    city: Lebsackbury
+    zipcode: 31428-2261
+  company:
+    name: Hoeger LLC
+    catchphrase: Centralized empowering task-force
+- id: 7
+  name: Kurtis Weissnat
+  email: Telly.Hoeger@billy.biz
+  address:
+    street: Rex Trail
+    suite: Suite 280
+    city: Howemouth
+    zipcode: 58804-1099
+  company:
+    name: Johns Group
+    catchphrase: Configurable multimedia task-force
