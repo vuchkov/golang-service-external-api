@@ -13,23 +13,23 @@ import (
 
 // User struct matches JSONPlaceholder API structure
 type User struct {
-	ID      int     `json:"id"`
-	Name    string  `json:"name"`
-	Email   string  `json:"email"`
-	Address Address `json:"address"`
-	Company Company `json:"company"`
+	ID      int     `json:"id" yaml:"id"`
+	Name    string  `json:"name" yaml:"name"`
+	Email   string  `json:"email" yaml:"email"`
+	Address Address `json:"address" yaml:"address"`
+	Company Company `json:"company" yaml:"company"`
 }
 
 type Address struct {
-	Street  string `json:"street"`
-	Suite   string `json:"suite"`
-	City    string `json:"city"`
-	Zipcode string `json:"zipcode"`
+	Street  string `json:"street" yaml:"street"`
+	Suite   string `json:"suite" yaml:"suite"`
+	City    string `json:"city" yaml:"city"`
+	Zipcode string `json:"zipcode" yaml:"zipcode"`
 }
 
 type Company struct {
-	Name        string `json:"name"`
-	CatchPhrase string `json:"catchPhrase"`
+	Name        string `json:"name" yaml:"name"`
+	CatchPhrase string `json:"catchPhrase" yaml:"catchPhrase"`
 }
 
 func main() {
