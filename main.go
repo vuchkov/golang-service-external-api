@@ -73,7 +73,7 @@ func main() {
 
 	// Persist filtered users to YAML file
 	if len(usersToPersist) > 0 {
-		err = persistUsersYaml(usersToPersist, "filtered_users.yaml")
+		err = PersistUsersYAML(usersToPersist, "filtered_users.yaml")
 		if err != nil {
 			fmt.Printf("Error persisting users: %v\n", err)
 		} else {
@@ -118,7 +118,7 @@ func displayUser(user User) {
 		user.Company.CatchPhrase)
 }
 
-func persistUsersYaml(users []User, filename string) error {
+func PersistUsersYAML(users []User, filename string) error {
 	data, err := yaml.Marshal(users)
 	if err != nil {
 		return err
